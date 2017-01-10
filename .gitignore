@@ -1,0 +1,19 @@
+# compiled output
+/dist
+/tmp
+/typings
+/deploy
+
+# dependencies
+/node_modules
+
+
+# IDEs
+/.vscode
+
+# misc
+.DS_Store
+/.sass-cache
+/connect.lock
+npm-debug.log
+/.chrome
