@@ -1,3 +1,6 @@
+@import '../../themes/default';
+@import "../../mixins/motion";
+
 @mixin zoom-motion($className, $keyframeName, $duration: $animation-duration-base) {
   @include make-motion($className, $keyframeName, $duration);
   .#{$className}-enter,

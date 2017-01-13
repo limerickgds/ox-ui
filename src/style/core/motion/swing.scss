@@ -1,3 +1,4 @@
+@import "../../mixins/motion";
 @mixin swing-motion($className, $keyframeName) {
   .#{$className}-enter,
   .#{$className}-appear {

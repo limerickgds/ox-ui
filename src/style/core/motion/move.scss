@@ -1,3 +1,4 @@
+@import "../../mixins/motion";
 @mixin move-motion($className, $keyframeName) {
   @include make-motion($className, $keyframeName);
   .#{$className}-enter,
