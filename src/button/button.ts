@@ -12,12 +12,11 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// TODO enum 枚举值
-// export enum ButtonSize {
-//   default,
-//   small,
-//   large
-// }
+
+export const ButtonSizeClass:any = {
+  small: 'sm',
+  large: 'lg'
+}
 
 // export enum ButtonShape {
 //   default,
@@ -25,7 +24,6 @@ import { CommonModule } from '@angular/common';
 // }
 
 @Component({
-  moduleId: module.id,
   selector: 'button[ox-button], button[ox-button-primary], button[ox-button-ghost], button[ox-button-dashed]',
   host: {
     '[class.clicked]': 'clicked'
@@ -82,11 +80,8 @@ export class OxButton {
   }
 
   _setElementSize(size: string, isAdd: boolean) {
-    if (size != null && size != '') {
-      const sizeClass = ({
-        large: 'lg',
-        small: 'sm'
-      })[size] || '';
+    if (size !== null && size !== undefined && size !== '') {
+      const sizeClass:string = ButtonSizeClass[size] || '';
       if(sizeClass !== '') {
         this._renderer.setElementClass(this._elementRef.nativeElement, `ox-button-${sizeClass}`, isAdd)
       }
