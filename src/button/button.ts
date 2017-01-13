@@ -29,7 +29,7 @@ export const ButtonSizeClass:any = {
     '[class.clicked]': 'clicked'
   },
   templateUrl: './button.html',
-  styleUrls: ['./style/index.scss'],
+  styleUrls: ['./button.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
