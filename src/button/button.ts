@@ -2,7 +2,6 @@ import {
   Component,
   ViewEncapsulation,
   Input,
-  HostBinding,
   HostListener,
   ChangeDetectionStrategy,
   ElementRef,
@@ -13,10 +12,10 @@ import {
 import { CommonModule } from '@angular/common';
 
 
-export const ButtonSizeClass:any = {
+export const BUTTON_SIZE_CLASS: any = {
   small: 'sm',
   large: 'lg'
-}
+};
 
 // TODO: shape enum 
 // export enum ButtonShape {
@@ -56,7 +55,7 @@ export class OxButton {
     return this._shape;
   }
   set shape(value: string) {
-    this._updateShape(value)
+    this._updateShape(value);
   }
 
   @Input()
@@ -64,7 +63,7 @@ export class OxButton {
     return this._size;
   }
   set size(value: string) {
-    this._updateSize(value)
+    this._updateSize(value);
   }
 
   constructor(private _elementRef: ElementRef, private _renderer: Renderer) { }
@@ -72,7 +71,7 @@ export class OxButton {
   @HostListener('click', ['$event'])
   onClick(e: Event) {
     this.clicked = true;
-    setTimeout(() => { this.clicked = false }, 500)
+    setTimeout(() => { this.clicked = false; }, 500);
   }
 
   _updateSize(newSize: string) {
@@ -83,9 +82,9 @@ export class OxButton {
 
   _setElementSize(size: string, isAdd: boolean) {
     if (size !== null && size !== undefined && size !== '') {
-      const sizeClass:string = ButtonSizeClass[size] || '';
-      if(sizeClass !== '') {
-        this._renderer.setElementClass(this._elementRef.nativeElement, `ox-button-${sizeClass}`, isAdd)
+      const sizeClass: string = BUTTON_SIZE_CLASS[size] || '';
+      if (sizeClass !== '') {
+        this._renderer.setElementClass(this._elementRef.nativeElement, `ox-button-${sizeClass}`, isAdd);
       }
     }
   }
@@ -98,7 +97,7 @@ export class OxButton {
 
   _setElementShape(shape: string, isAdd: boolean) {
     if (shape != null && shape != '') {
-      this._renderer.setElementClass(this._elementRef.nativeElement, `ox-button-${shape}`, isAdd)
+      this._renderer.setElementClass(this._elementRef.nativeElement, `ox-button-${shape}`, isAdd);
     }
   }
 }
