@@ -18,18 +18,20 @@ export const ButtonSizeClass:any = {
   large: 'lg'
 }
 
+// TODO: shape enum 
 // export enum ButtonShape {
 //   default,
 //   cricle
 // }
 
 @Component({
+  moduleId: module.id,
   selector: 'button[ox-button], button[ox-button-primary], button[ox-button-ghost], button[ox-button-dashed]',
   host: {
     '[class.clicked]': 'clicked'
   },
   templateUrl: './button.html',
-  styleUrls: ['./button.scss'],
+  styleUrls: ['./button.css'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -102,11 +104,12 @@ export class OxButton {
 }
 
 @Component({
+  moduleId: module.id,
   selector: 'ox-button-group',
   inputs: ['color', 'disabled', 'disableRipple'],
   host: {},
   templateUrl: 'button.html',
-  styleUrls: ['style/index.scss'],
+  styleUrls: ['button.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class OxButtonGroup {
