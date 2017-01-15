@@ -8,3 +8,4 @@ Ant Desgin UI library for angular2
 |------------------|-------------------------------------|
 | button           |                           Available |
 | icon             |                           Available |
+| tab              |                         In-progress |
