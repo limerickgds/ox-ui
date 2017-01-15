@@ -2,9 +2,6 @@
   "name": "ox-ui",
   "version": "0.1.1",
   "description": "Ant Desgin UI library for angular2",
-  "main": "./dist/material.umd.js",
-  "module": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
   "directories": {
     "doc": "docs",
     "example": "examples",
@@ -21,18 +18,15 @@
   },
   "keywords": [
     "ox-ui",
-    "angular2.0",
+    "angular2",
     "ui",
     "ant",
     "ant-desgin"
   ],
-  "peerDependencies": {
-    "@angular/common": "^2.2.0",
-    "@angular/compiler": "^2.2.0",
-    "@angular/http": "^2.2.0"
-  },
   "dependencies": {
     "@angular/core": "^2.2.0",
+    "@angular/common": "^2.2.0",
+    "@angular/http": "^2.2.0",
     "@angular/forms": "^2.2.0",
     "@angular/platform-browser": "^2.2.0",
     "@angular/platform-browser-dynamic": "^2.2.0",
@@ -44,6 +38,7 @@
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
+    "@angular/compiler": "^2.2.0",
     "@types/chai": "^3.4.34",
     "@types/glob": "^5.0.29",
     "@types/gulp": "^3.8.29",
@@ -54,16 +49,23 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-cli": "^1.2.2",
     "gulp-connect": "^5.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inline-ng2-template": "^4.0.0",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-rollup": "^2.9.0",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.3.0",
     "gulp-typescript": "^3.1.4",
-    "install": "^0.8.2",
+    "merge2": "^1.0.3",
     "node-sass": "^3.11.2",
-    "raw-loader": "^0.5.1",
-    "reflect-metadata": "^0.1.8",
     "resolve-bin": "^0.4.0",
     "run-sequence": "^1.2.2",
+    "stylelint": "^7.7.1",
     "ts-node": "^2.0.0",
+    "tslint": "^4.3.1",
     "typescript": "^2.0.10"
   },
   "author": "limerick",
