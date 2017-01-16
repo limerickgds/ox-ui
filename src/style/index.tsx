@@ -1,6 +1,6 @@
 import './index.scss';
 
-function isFlexSupported(style:Object) {
+function isFlexSupported(style: Object) {
   return 'flex' in style ||
     'webkitFlex' in style ||
     'MozFlex' in style;

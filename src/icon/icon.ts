@@ -79,7 +79,6 @@ export class OxIcon {
   }
 }
 
-
 @NgModule({
   imports: [],
   exports: [OxIcon],
