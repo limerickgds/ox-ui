@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-import { OxButtonModule } from './button';
-import { OxIconModule } from './icon';
+import { OxButtonModule } from './button/index';
+import { OxIconModule } from './icon/index';
 
 
 const OX_MODULES = [

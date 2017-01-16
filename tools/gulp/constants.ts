@@ -23,14 +23,37 @@ export const HTML_MINIFIER_OPTIONS = {
   removeAttributeQuotes: false
 };
 
-// TODO: delete
 export const INLINE_TEMPLATE_OPTIONS = {
   target: 'es5',
   useRelativePaths: true,
-  removeLineBreaks: true,
-  templateProcessor: function (path: string, ext: any, file: any, cb: Function) {
-    cb(null, file);
-  }
+  removeLineBreaks: true
+};
+
+export const ROLLUP_GLOBALS: { [name: string]: string } = {
+  // Angular dependencies
+  '@angular/core': 'ng.core',
+  '@angular/common': 'ng.common',
+  '@angular/forms': 'ng.forms',
+  '@angular/http': 'ng.http',
+  '@angular/platform-browser': 'ng.platformBrowser',
+  '@angular/platform-browser-dynamic': 'ng.platformBrowserDynamic',
+
+  // Rxjs dependencies
+  'rxjs/Subject': 'Rx',
+  'rxjs/add/observable/fromEvent': 'Rx.Observable',
+  'rxjs/add/observable/forkJoin': 'Rx.Observable',
+  'rxjs/add/observable/of': 'Rx.Observable',
+  'rxjs/add/observable/merge': 'Rx.Observable',
+  'rxjs/add/observable/throw': 'Rx.Observable',
+  'rxjs/add/operator/toPromise': 'Rx.Observable.prototype',
+  'rxjs/add/operator/map': 'Rx.Observable.prototype',
+  'rxjs/add/operator/filter': 'Rx.Observable.prototype',
+  'rxjs/add/operator/do': 'Rx.Observable.prototype',
+  'rxjs/add/operator/share': 'Rx.Observable.prototype',
+  'rxjs/add/operator/finally': 'Rx.Observable.prototype',
+  'rxjs/add/operator/catch': 'Rx.Observable.prototype',
+  'rxjs/add/operator/first': 'Rx.Observable.prototype',
+  'rxjs/Observable': 'Rx'
 };
 
 export const SERVER_PORT = 3000;
