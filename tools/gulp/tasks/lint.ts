@@ -1,5 +1,5 @@
 import gulp = require('gulp');
-import {execNodeTask} from '../utils';
+import { execNodeTask } from '../utils';
 
 gulp.task('lint', ['lint:ts', 'lint:style']);
 
