@@ -7,6 +7,8 @@ const gulpRollup = require('gulp-better-rollup');
 
 task(':build:ts', tsBuildTask(SOURCE_ROOT, 'tsconfig.build.json'));
 
+task(':build:spec', tsBuildTask(SOURCE_ROOT));
+
 task(':build:sass', sassBuildTask(SOURCE_SASS_SRC, DIST_ROOT));
 
 task(':build:assets', copyTask([
