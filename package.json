@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
+    "test": "gulp test",
     "clean": "gulp clean"
   },
   "repository": {
@@ -24,16 +25,17 @@
     "ant-desgin"
   ],
   "dependencies": {
-    "@angular/core": "^2.2.0",
     "@angular/common": "^2.2.0",
-    "@angular/http": "^2.2.0",
+    "@angular/core": "^2.2.0",
     "@angular/forms": "^2.2.0",
+    "@angular/http": "^2.2.0",
     "@angular/platform-browser": "^2.2.0",
     "@angular/platform-browser-dynamic": "^2.2.0",
     "@angular/router": "^3.2.0",
     "core-js": "^2.4.1",
     "lodash": "^4.13.1",
     "rxjs": "^5.0.0",
+    "systemjs": "^0.19.42",
     "warning": "^2.1.0",
     "zone.js": "^0.7.4"
   },
