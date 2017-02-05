@@ -34,7 +34,7 @@ task(':build:rollup', () => {
 
   const rollupGenerateOptions = {
     moduleId: '',
-    moduleName: 'ox-ui',
+    moduleName: 'ng.ox',
     format: 'umd',
     globals: ROLLUP_GLOBALS,
     dest: 'ox-ui.umd.js'

@@ -15,13 +15,13 @@ function isSpecFile(path) {
   return path.slice(-8) == '.spec.js';
 }
 
-function isMaterialFile(path) {
+function isOxFile(path) {
   return isJsFile(path) && path.indexOf('vendor') == -1;
 }
 
 const allSpecFiles = Object.keys(window.__karma__.files)
   .filter(isSpecFile)
-  .filter(isMaterialFile);
+  .filter(isOxFile);
 
 // Load our SystemJS configuration.
 System.config({
