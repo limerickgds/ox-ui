@@ -4,6 +4,8 @@ import {
   Component,
   ElementRef,
   Input,
+  OnChanges,
+  OnInit,
   Renderer,
   SimpleChange,
   ViewEncapsulation,
@@ -18,7 +20,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OxIcon {
+export class OxIcon implements OnChanges, OnInit{
   private _type: string;
   private _spin: boolean;
 
@@ -51,13 +53,13 @@ export class OxIcon {
     this._updateFontIcontClass();
   }
 
-  _updateSpinClass(newSpin: boolean) {
+  private _updateSpinClass(newSpin: boolean) {
     if (newSpin) {
       this._setElementClass('anticon-spin', true);
     }
   }
 
-  _setElementClass(className: string, isAdd: boolean) {
+  private _setElementClass(className: string, isAdd: boolean) {
     if (className !== null && className !== undefined && className !== '') {
       this._renderer.setElementClass(this._elementRef.nativeElement, className, isAdd);
     }
