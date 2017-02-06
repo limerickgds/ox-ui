@@ -1,6 +1,6 @@
-@import '../style/index';
-@import '../style/themes/default';
-@import '../style/mixins/index';
+@import '../common/style/index';
+@import '../common/style/themes/default';
+@import '../common/style/mixins/index';
 @import './_mixin';
 $btn-prefix-cls: #{$ox-prefix}-button;
 [#{$btn-prefix-cls}],

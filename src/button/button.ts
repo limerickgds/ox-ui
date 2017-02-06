@@ -9,8 +9,6 @@ import {
   NgModule,
   ModuleWithProviders,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 
 export const BUTTON_SIZE_CLASS: any = {
   small: 'sm',
@@ -74,13 +72,13 @@ export class OxButton {
     setTimeout(() => { this.clicked = false; }, 500);
   }
 
-  _updateSize(newSize: string) {
+  private _updateSize(newSize: string) {
     this._setElementSize(this._size, false);
     this._setElementSize(newSize, true);
     this._size = newSize;
   }
 
-  _setElementSize(size: string, isAdd: boolean) {
+  private _setElementSize(size: string, isAdd: boolean) {
     if (size !== null && size !== undefined && size !== '') {
       const sizeClass: string = BUTTON_SIZE_CLASS[size] || '';
       if (sizeClass !== '') {
@@ -89,13 +87,13 @@ export class OxButton {
     }
   }
 
-  _updateShape(newShape: string) {
+  private _updateShape(newShape: string) {
     this._setElementShape(this._shape, false);
     this._setElementShape(newShape, true);
     this._shape = newShape;
   }
 
-  _setElementShape(shape: string, isAdd: boolean) {
+  private _setElementShape(shape: string, isAdd: boolean) {
     if (shape != null && shape != '') {
       this._renderer.setElementClass(this._elementRef.nativeElement, `ox-button-${shape}`, isAdd);
     }
@@ -121,7 +119,7 @@ export class OxButtonGroup {
 
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [],
   exports: [OxButton, OxButtonGroup],
   declarations: [OxButton, OxButtonGroup],
 })
