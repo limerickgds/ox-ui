@@ -72,7 +72,7 @@
     "resolve-bin": "^0.4.0",
     "run-sequence": "^2.2.1",
     "stylelint": "^7.7.1",
-    "ts-node": "^2.0.0",
+    "ts-node": "^8.0.3",
     "tslint": "^5.10.0",
     "typescript": "^2.0.10"
   },
