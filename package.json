@@ -51,7 +51,7 @@
     "@types/rx": "^4.1.1",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-better-rollup": "^1.0.2",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.3.2",
