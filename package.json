@@ -55,7 +55,7 @@
     "gulp-better-rollup": "^1.0.2",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.3.2",
-    "gulp-cli": "^1.2.2",
+    "gulp-cli": "^2.2.0",
     "gulp-connect": "^5.0.0",
     "gulp-htmlmin": "^4.0.0",
     "gulp-inline-ng2-template": "^5.0.1",
