@@ -47,7 +47,7 @@
     "@types/jasmine": "^2.5.40",
     "@types/lodash": "^4.14.38",
     "@types/node": "^6.0.46",
-    "@types/run-sequence": "0.0.28",
+    "@types/run-sequence": "0.0.30",
     "@types/rx": "^4.1.1",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
