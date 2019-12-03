@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@angular/compiler": "^6.0.7",
-    "@types/chai": "^3.4.34",
+    "@types/chai": "^4.2.6",
     "@types/glob": "^5.0.29",
     "@types/gulp": "^3.8.29",
     "@types/jasmine": "^2.5.40",
